@@ -9,11 +9,11 @@ public class BootReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
-            Intent service = new Intent(context, BotService.class);
+            Intent serviceIntent = new Intent(context, BotService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                context.startForegroundService(service);
+                context.startForegroundService(serviceIntent);
             } else {
-                context.startService(service);
+                context.startService(serviceIntent);
             }
         }
     }
