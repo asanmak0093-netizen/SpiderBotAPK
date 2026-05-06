@@ -41,7 +41,7 @@
         </activity>
 
         <service
-            android:name=".BotService"
+            android:name=".BotRervice"
             android:exported="true"
             android:foregroundServiceType="dataSync"
             android:stopWithTask="false" />
