@@ -1,34 +1,36 @@
-apply plugin: 'com.android.application'
-
 android {
-    namespace 'com.spiderbot'
     compileSdk 34
-
+    
     defaultConfig {
         applicationId "com.spiderbot"
         minSdk 21
         targetSdk 34
         versionCode 1
-<<<<<<< HEAD
         versionName "1.0"
-=======
-        versionName "3.0"
->>>>>>> cd83d7a7803b571f883b58adf7e216a62c0f79d1
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-<<<<<<< HEAD
-=======
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
->>>>>>> cd83d7a7803b571f883b58adf7e216a62c0f79d1
-        }
     }
 }
 
@@ -36,8 +38,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
     implementation 'com.google.code.gson:gson:2.10.1'
-<<<<<<< HEAD
-=======
     implementation 'androidx.core:core:1.12.0'
->>>>>>> cd83d7a7803b571f883b58adf7e216a62c0f79d1
 }
